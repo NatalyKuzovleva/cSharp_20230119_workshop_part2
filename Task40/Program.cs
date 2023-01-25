@@ -8,7 +8,7 @@
 /************************* М Е Т О Д Ы *************************/
 
 // Метод выводит в консоль текст на запрос ввода числа от пользователя
-int EnterDigitRequest(string text)
+int EnterNumberRequest(string text)
 {
     Console.WriteLine(text);
     int result = Convert.ToInt32(Console.ReadLine());
@@ -26,9 +26,9 @@ bool IsTriangleExist(int s1, int s2, int s3)
 
 /***************************************************************/
 
-int sideA = EnterDigitRequest("Введите первую сторону треугольника: ");
-int sideB = EnterDigitRequest("Введите вторую сторону треугольника: ");
-int sideC = EnterDigitRequest("Введите третью сторону треугольника: ");
+int sideA = EnterNumberRequest("Введите первую сторону треугольника: ");
+int sideB = EnterNumberRequest("Введите вторую сторону треугольника: ");
+int sideC = EnterNumberRequest("Введите третью сторону треугольника: ");
 
 Console.WriteLine(IsTriangleExist(sideA, sideB, sideC) 
     ? "Треугольник с указанными сторонами существует!"
