@@ -26,9 +26,9 @@ bool IsTriangleExist(int s1, int s2, int s3)
 
 /***************************************************************/
 
-int sideA = EnterNumberRequest("Введите первую сторону треугольника: ");
-int sideB = EnterNumberRequest("Введите вторую сторону треугольника: ");
-int sideC = EnterNumberRequest("Введите третью сторону треугольника: ");
+int sideA = EnterNumberRequest("Введите длину первой стороны треугольника: ");
+int sideB = EnterNumberRequest("Введите длину второй стороны треугольника: ");
+int sideC = EnterNumberRequest("Введите длину третьей стороны треугольника: ");
 
 Console.WriteLine(IsTriangleExist(sideA, sideB, sideC) 
     ? "Треугольник с указанными сторонами существует!"
