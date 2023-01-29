@@ -14,12 +14,12 @@
 // Создание двумерного массива, заполненного псевдослучайными числами
 int[,] CreateMatrixRndInt(int rows, int columns, int min, int max)
 {
-    int[,] matrix = new int[rows, columns]; // создаём двумерный массив
-    Random rnd = new Random(); // создаём экземпляр класса Рандом
+    int[,] matrix = new int[rows, columns];     // создаём двумерный массив
+    Random rnd = new Random();                  // создаём экземпляр класса Рандом
 
-    for (int i = 0; i < matrix.GetLength(0); i++) // matrix.GetLength(0) - нулевое измерение это строки
+    for (int i = 0; i < matrix.GetLength(0); i++)       // matrix.GetLength(0) - нулевое измерение это строки
     {
-        for (int j = 0; j < matrix.GetLength(1); j++)
+        for (int j = 0; j < matrix.GetLength(1); j++)   // matrix.GetLength(1) - первое измерение это столбцы
         {
             matrix[i, j] = rnd.Next(min, max + 1);
         }
