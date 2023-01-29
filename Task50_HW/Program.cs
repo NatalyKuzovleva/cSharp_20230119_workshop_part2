@@ -51,9 +51,7 @@ int[] EnterIndexElement(string text)
     Console.WriteLine(text);
     int i = Convert.ToInt32(Console.ReadLine());
     int j = Convert.ToInt32(Console.ReadLine());
-    int[] array = new int[2];
-    array[0] = i;
-    array[1] = j;
+    int[] array = new int[]{i,j};
     return array;
 }
 
