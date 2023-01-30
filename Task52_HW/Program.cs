@@ -66,7 +66,7 @@ double[] FindArithmeticMean(int[,] matrix)
 }
 
 
-// Вывод массива на печать в строку в формате (a1,a2,a3,a4,a5)
+// Вывод массива на печать в строку в формате a1; a2; a3; a4; a5
 void PrintArrayDouble(double[] array)
 {
     for (int i = 0; i < array.Length; i++)
