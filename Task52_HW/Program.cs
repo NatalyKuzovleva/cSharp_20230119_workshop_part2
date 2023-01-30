@@ -13,7 +13,7 @@ System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.
 
 /************************* М Е Т О Д Ы *************************/
 
-// Создание двумерного массива, заполненного псевдослучайными числами
+// Создание двумерного массива, заполненного псевдослучайными целыми числами
 int[,] CreateMatrixRndInt(int rows, int columns, int min, int max)
 {
     int[,] matrix = new int[rows, columns];     // создаём двумерный массив
